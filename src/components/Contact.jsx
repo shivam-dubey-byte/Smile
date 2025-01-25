@@ -1,23 +1,31 @@
+import React from "react";
+import { useNavigate } from "react-router-dom";
 import AnimatedTitle from "./AnimatedTitle";
 import Button from "./Button";
 
 const ImageClipBox = ({ src, clipClass }) => (
   <div className={clipClass}>
-    <img src={src} />
+    <img src={src} alt="Decorative" />
   </div>
 );
 
 const Contact = () => {
+  const navigate = useNavigate(); // Initialize the navigate function
+
+  const handleButtonClick = () => {
+    navigate("/reach"); // Redirect to the /reach route
+  };
+
   return (
-    <div id="contact" className="my-20 min-h-96 w-screen  px-10">
-      <div className="relative rounded-lg bg-black py-24 text-blue-50 sm:overflow-hidden">
-        <div className="absolute -left-20 top-0 hidden h-full w-72 overflow-hidden sm:block lg:left-20 lg:w-96">
+    <div id="contact" className="w-screen px-10 my-20 min-h-96">
+      <div className="relative py-24 bg-black rounded-lg text-blue-50 sm:overflow-hidden">
+        <div className="absolute top-0 hidden h-full overflow-hidden -left-20 w-72 sm:block lg:left-20 lg:w-96">
           <ImageClipBox
-            src="/img/contact-1.webp"
+            src="/img/story.jpg"
             clipClass="contact-clip-path-1"
           />
           <ImageClipBox
-            src="/img/contact-2.webp"
+            src="/img/hello.jpg"
             clipClass="contact-clip-path-2 lg:translate-y-40 translate-y-60"
           />
         </div>
@@ -35,15 +43,22 @@ const Contact = () => {
 
         <div className="flex flex-col items-center text-center">
           <p className="mb-10 font-general text-[10px] uppercase">
-            Join Zentry
+            Join CRYPTOPULSE
           </p>
 
           <AnimatedTitle
-            title="let&#39;s b<b>u</b>ild the <br /> new era of <br /> g<b>a</b>ming t<b>o</b>gether."
+            title="let&#39;s b<b>u</b>ild the <br /> new era of <br /> M<b>I</b>Ning t<b>o</b>gether."
             className="special-font !md:text-[6.2rem] w-full font-zentry !text-5xl !font-black !leading-[.9]"
           />
 
-          <Button title="contact us" containerClass="mt-10 cursor-pointer" />
+          <button
+            onClick={handleButtonClick}
+            className="px-8 py-3 mt-8 text-lg text-gray-900 transition-transform transform bg-white rounded-full shadow-md hover:shadow-lg hover:bg-gray-100 hover:scale-105"
+          >
+            Contact Us
+          </button>
+
+
         </div>
       </div>
     </div>

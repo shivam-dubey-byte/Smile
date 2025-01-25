@@ -103,12 +103,10 @@ const Features = () => (
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
         <p className="font-circular-web text-lg text-blue-50">
-          Into the Metagame Layer
+          Into the CryptoPulse Layer
         </p>
         <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
-          Immerse yourself in a rich and ever-expanding universe where a vibrant
-          array of products converge into an interconnected overlay experience
-          on your world.
+        Crypto Pulse is a revolutionary cryptocurrency ecosystem designed to empower users by integrating innovative earning mechanisms with cutting-edge blockchain technology. It’s more than just a cryptocurrency; it’s a movement to bring financial freedom, simplicity, and energy to the blockchain community.
         </p>
       </div>
 
@@ -117,10 +115,10 @@ const Features = () => (
           src="videos/feature-1.mp4"
           title={
             <>
-              radia<b>n</b>t
+              T<b>a</b>p to E<b>a</b>rn R<b>e</b>war<b>d</b>s
             </>
           }
-          description="A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding adventure."
+          description="Users can effortlessly earn Crypto Pulse coins by engaging with the platform. Through interactive mechanisms like tap-to-earn, users are rewarded in real time, bridging the gap between gamification and blockchain."
           isComingSoon
         />
       </BentoTilt>
@@ -131,10 +129,10 @@ const Features = () => (
             src="videos/feature-2.mp4"
             title={
               <>
-                zig<b>m</b>a
+               S<b>e</b>cure Bloc<b>k</b>chain Inte<b>g</b>ration
               </>
             }
-            description="An anime and gaming-inspired NFT collection - the IP primed for expansion."
+            description="Crypto Pulse operates on a highly secure blockchain, ensuring transparency, scalability, and trustworthiness for all transactions."
             isComingSoon
           />
         </BentoTilt>
@@ -144,10 +142,10 @@ const Features = () => (
             src="videos/feature-3.mp4"
             title={
               <>
-                n<b>e</b>xus
+                Ga<b>m</b>ified <b>E</b>ngag<b>e</b>ment
               </>
             }
-            description="A gamified social hub, adding a new dimension of play to social interaction for Web3 communities."
+            description="Beyond earning, Crypto Pulse includes gamified features like leaderboards, streaks, and multipliers, making the user experience fun, engaging, and rewarding."
             isComingSoon
           />
         </BentoTilt>
@@ -157,10 +155,10 @@ const Features = () => (
             src="videos/feature-4.mp4"
             title={
               <>
-                az<b>u</b>l
+                Comm<b>u</b>nity-<b>D</b>riven <b>A</b>pproach
               </>
             }
-            description="A cross-world AI Agent - elevating your gameplay to be more fun and productive."
+            description="Crypto Pulse fosters a vibrant, engaging community where users participate in challenges, voting, and interactive events to boost their earnings and drive platform decisions."
             isComingSoon
           />
         </BentoTilt>

@@ -1,8 +1,13 @@
 import gsap from "gsap";
 import { useRef } from "react";
-
+import { Link } from "react-router-dom";
 import Button from "./Button";
 import AnimatedTitle from "./AnimatedTitle";
+import { useNavigate } from "react-router-dom";
+
+const navigateToInfo = () => {
+  navigate("/Info");
+};
 
 const FloatingImage = () => {
   const frameRef = useRef(null);
@@ -49,12 +54,12 @@ const FloatingImage = () => {
     <div id="story" className="min-h-dvh w-screen bg-black text-blue-50">
       <div className="flex size-full flex-col items-center py-10 pb-24">
         <p className="font-general text-sm uppercase md:text-[10px]">
-          the multiversal ip world
+        Tap your way into the decentralized revolution
         </p>
 
         <div className="relative size-full">
           <AnimatedTitle
-            title="the st<b>o</b>ry of <br /> a hidden real<b>m</b>"
+            title="Bri<b>n</b>ging <b>c</b>rypto re<b>w</b>ards to <b>y</b>our fing<b>e</b>rtips"
             containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10"
           />
 
@@ -106,16 +111,16 @@ const FloatingImage = () => {
         <div className="-mt-80 flex w-full justify-center md:-mt-64 md:me-44 md:justify-end">
           <div className="flex h-full w-fit flex-col items-center md:items-start">
             <p className="mt-3 max-w-sm text-center font-circular-web text-violet-50 md:text-start">
-              Where realms converge, lies Zentry and the boundless pillar.
-              Discover its secrets and shape your fate amidst infinite
-              opportunities.
+             By combining blockchain innovation with simplicity, we aim to democratize the earning potential of cryptocurrency and empower users worldwide.
             </p>
 
             <Button
               id="realm-btn"
-              title="discover prologue"
+              title="more about us"
               containerClass="mt-5"
+              onClick={navigateToInfo}
             />
+
           </div>
         </div>
       </div>
