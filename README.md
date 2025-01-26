@@ -160,23 +160,17 @@ We welcome contributions to enhance the platform! Here's how you can help:
 
 ---
 
-## 📜 **License**
-
-This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and share this project.
-
----
-
 ## 💬 **Contact**
 
 Have questions or feedback? Reach out to us:
-- **Email**: your-email@example.com
-- **GitHub**: [Your GitHub Profile](https://github.com/your-username)
+- **Email**: dubeyshivamraj@gmail.com
+- **GitHub**: [Your GitHub Profile]([https://github.com/your-username](https://github.com/shivam-dubey-byte))
 
 ---
 
 ## 🌈 **Acknowledgments**
 
-- Special thanks to the **hackathon organizers** for providing this exciting platform! 🙌
+- Special thanks to the **LNMHACKS 7.0** for providing this exciting platform! 🙌
 - Our team members for their incredible collaboration and hard work. 🤝
 
 ---
