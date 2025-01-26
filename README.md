@@ -72,8 +72,8 @@ Our platform utilizes the following technologies:
 ## 🌐 **How It Works**
 
 1. **User Onboarding**
-   - Connect your wallet via MetaMask.
-   - Create a profile.
+   - **Connect Your Wallet via Phantom**: Users connect their Solana wallet through Phantom Wallet for seamless authentication and transaction management.
+   - **Create a profile**: Users provide minimal details to create a decentralized profile linked to their wallet address.
 
 2. **Photo Upload**
    - Upload a photo directly through the platform.
@@ -81,7 +81,8 @@ Our platform utilizes the following technologies:
 
 3. **Smile Detection and Token Rewards**
    - AI algorithms detect smiling faces in photos.
-   - Earn base tokens for every upload, and bonus tokens for smiling faces.
+   - Base Tokens: Awarded for each photo uploaded.
+     Bonus Tokens: Extra rewards for photos with verified smiles.
 
 4. **Ranking System**
    - Users are ranked based on their token count.
