@@ -4,7 +4,7 @@ const FormData = require('form-data');
 const fs = require('fs');
 const path = require('path');
 const cors = require('cors');
-//SMILE
+//SMILE backend
 const app = express();
 const port = 3000;
 
