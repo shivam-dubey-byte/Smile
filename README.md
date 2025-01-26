@@ -164,7 +164,7 @@ We welcome contributions to enhance the platform! Here's how you can help:
 
 Have questions or feedback? Reach out to us:
 - **Email**: dubeyshivamraj@gmail.com
-- **GitHub**: [https://github.com/shivam-dubey-byte]
+- **GitHub**: https://github.com/shivam-dubey-byte
 
 ---
 
