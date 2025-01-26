@@ -38,8 +38,7 @@ Our platform utilizes the following technologies:
 - **Solana**: For implementing smart contracts and managing tokens
 - **Rust**: To write the smart contracts on Solana.
 - **Phantom Wallet**: For wallet integration.
-- **Web3.js**: To interact with the Solana blockchain
-
+- **Solana Command Line Interface (CLI):**: For deploying programs, managing accounts, and performing on-chain operations.
 ---
 
 ## ✨ **Features**
