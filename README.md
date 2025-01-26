@@ -82,7 +82,9 @@ Our platform utilizes the following technologies:
 3. **Smile Detection and Token Rewards**
    - AI algorithms detect smiling faces in photos.
    - **Base Tokens**: Awarded for each photo uploaded.
-     **Bonus Tokens**: Extra rewards for photos with verified smiles.
+   - **Bonus Tokens**: Extra rewards for photos with verified smiles.
+   - **Reward Distribution**:Tokens are transferred to users' Solana wallets using a Solana smart contract.
+     
      
 
 4. **Ranking System**
@@ -91,6 +93,8 @@ Our platform utilizes the following technologies:
 
 5. **Gallery and Analytics**
    - Users can manage their uploaded photos and track their progress on a personalized dashboard.
+   - Analytics on smile frequency, token earnings, and ranking trends are visualized in real time.
+
 
 ---
 
