@@ -35,10 +35,10 @@ Our platform utilizes the following technologies:
 - **IPFS (InterPlanetary File System)**: For decentralized photo storage.
 
 ### **Blockchain**
-- **Ethereum**: For implementing smart contracts and managing tokens.
-- **Solidity**: To write the smart contracts.
-- **MetaMask**: For wallet integration.
-- **Web3.js**: To interact with the Ethereum blockchain.
+- **Solana**: For implementing smart contracts and managing tokens
+- **Rust**: To write the smart contracts on Solana.
+- **Phantom Wallet**: For wallet integration.
+- **Web3.js**: To interact with the Solana blockchain
 
 ---
 
