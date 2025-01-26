@@ -81,8 +81,9 @@ Our platform utilizes the following technologies:
 
 3. **Smile Detection and Token Rewards**
    - AI algorithms detect smiling faces in photos.
-   - Base Tokens: Awarded for each photo uploaded.
-     Bonus Tokens: Extra rewards for photos with verified smiles.
+   - **Base Tokens**: Awarded for each photo uploaded.
+     **Bonus Tokens**: Extra rewards for photos with verified smiles.
+     
 
 4. **Ranking System**
    - Users are ranked based on their token count.
