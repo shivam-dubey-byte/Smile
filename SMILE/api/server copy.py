@@ -1,7 +1,10 @@
+# /api/predict.py
+
 from flask import Flask, request, jsonify
 from deepface import DeepFace
 from PIL import Image
 import tempfile
+from io import BytesIO
 
 app = Flask(__name__)
 
@@ -15,20 +18,17 @@ def get_happiness_score(image):
     smile_score = emotion_data['happy']
     return float(smile_score)
 
-@app.route('/predict', methods=['POST'])
+@app.route('/api/predict', methods=['POST'])
 def predict():
     if 'image' not in request.files:
-        return jsonify({'error': 'No image file provided'}), 400
+        return jsonify({'error': 'No image uploaded'}), 400
 
-    file = request.files['image']
-    try:
-        image = Image.open(file.stream)
-        score = get_happiness_score(image)
-        return jsonify({'happiness_score': score}), 200
-    except Exception as e:
-        return jsonify({'error': str(e)}), 500
+    image = Image.open(request.files['image'])
+    score = get_happiness_score(image)
+    return jsonify({'happiness_score': score})
 
-# Remove debug=True for production deployment
-if __name__ == '__main__':
-    from waitress import serve
-    serve(app, host='0.0.0.0', port=8080)
+# Vercel handler
+def handler(event, context):
+    from flask_lambda import FlaskLambda
+    app_lambda = FlaskLambda(app)
+    return app_lambda(event, context)

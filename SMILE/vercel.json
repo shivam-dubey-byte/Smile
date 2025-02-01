@@ -1,9 +1,9 @@
 {
+  "version": 2,
   "builds": [
-    {
-      "src": "server.py",
-      "use": "@vercel/python",
-      "config": { "runtime": "python3.10" }
-    }
+    { "src": "api/predict.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/api/predict", "dest": "/api/predict.py" }
   ]
 }
