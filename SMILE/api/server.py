@@ -1,4 +1,7 @@
 from flask import Flask
+from deepface import DeepFace
+from PIL import Image
+import io
 
 app=Flask(__name__)
 
