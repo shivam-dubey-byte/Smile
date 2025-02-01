@@ -17,5 +17,18 @@ def get_happiness_score(image):
 def AboutUs():
     return "Smile ML Working!! "#render_template('AboutUs.html',home='',about='active',donate="",contact="")
 
+@app.route('/predict', methods=['POST'])
+def predict():
+    if 'image' not in request.files:
+        return jsonify({'error': 'No image file provided'}), 400
+
+    image_file = request.files['image']
+    image_data = image_file.read()
+    try:
+        score = get_happiness_score(image_data)
+        return jsonify({'happiness_score': score})
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
 if __name__ == '__main__':
     app.run(debug=True)
