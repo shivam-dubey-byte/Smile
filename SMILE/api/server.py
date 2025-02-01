@@ -12,6 +12,10 @@ def get_happiness_score(image):
     smile_score = emotion_data.get('happy', 0.0)
     return float(smile_score)
 
+@app.get('/',methods=['GET'])
+def index():
+    return "Smile ML Backend Working"
+
 @app.route('/predict', methods=['POST'])
 def predict():
     if 'image' not in request.files:
