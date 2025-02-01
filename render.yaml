@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: smile-ml-backend
+    runtime: python
+    buildCommand: |
+      cd smile && pip install -r requirements.txt
+    startCommand: |
+      cd smile && python app.py
+    envVars:
+      - key: FLASK_ENV
+        value: production
+    plan: free
